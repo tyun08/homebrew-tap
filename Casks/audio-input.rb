@@ -1,14 +1,14 @@
 cask "audio-input" do
-  version "0.3.7"
+  version "0.3.8"
 
   on_arm do
-    url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio%20Input_#{version}_aarch64.dmg"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5" # Run: shasum -a 256 Audio\ Input_#{version}_aarch64.dmg
+    url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio.Input_#{version}_aarch64.dmg"
+    sha256 "c9dda920964d584d59c20a2ce7320ab19d9d875d188519bce00b9f72d80fa160"
   end
 
   on_intel do
-    url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio%20Input_#{version}_x64.dmg"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5" # Run: shasum -a 256 Audio\ Input_#{version}_x64.dmg
+    url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio.Input_#{version}_x64.dmg"
+    sha256 "ab2cd1994da9ae54661a76e12e4a92e776a1527d7790bd49b3c4256ee71b7846"
   end
 
   name "Audio Input"
@@ -18,8 +18,6 @@ cask "audio-input" do
   depends_on macos: ">= :ventura"
 
   app "Audio Input.app"
-
-  # conflicts_with cask: "audio-input-bin"
 
   uninstall quit:   "com.audioinput.app",
             delete: "/Applications/Audio Input.app"
