@@ -8,7 +8,7 @@ cask "audio-input" do
 
   on_intel do
     version "0.4.7"
-    sha256 "b6ce7d826dc311f39ff38fc0ec27591975b6d670302ae4809837130e5d60b019"
+    sha256 "36df16994d4cbdaaf04ac18ea62e5469bb34b4e4f670db39218b18572d0c29c3"
 
     url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio.Input_#{version}_x64.dmg"
   end
