@@ -1,13 +1,13 @@
 cask "audio-input" do
   on_arm do
-    version "0.4.6"
-    sha256 "c1cfdeec708ce9a6322074bcb7a57f80cfb516178a1119dcf6a2dbe87718fda6"
+    version "0.4.7"
+    sha256 "0c9dd723437bf17a38350b0b7ae4c8b0ba25f3d0f8838db2ded68721073dc55b"
 
     url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio.Input_#{version}_aarch64.dmg"
   end
 
   on_intel do
-    version "0.4.6"
+    version "0.4.7"
     sha256 "b6ce7d826dc311f39ff38fc0ec27591975b6d670302ae4809837130e5d60b019"
 
     url "https://github.com/tyun08/audio-input/releases/download/v#{version}/Audio.Input_#{version}_x64.dmg"
